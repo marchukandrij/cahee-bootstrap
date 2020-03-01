@@ -157,7 +157,6 @@ $button-red: rgb(247, 43, 59);
     color: white;
     line-height: 55px;
     text-align: center;
-    margin-bottom: 40px;
     &:hover {
         background-color: darken($button-red, 10%);
     }
