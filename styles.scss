@@ -69,6 +69,51 @@ $button-orange: #ff6033;
 
 // ======================== Page Blocks
 
+// ------ Navigation Block
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: (147px - 70px)/2;
+    padding-bottom: (147px - 70px)/2;
+    &__logo {
+        font-size: 50px;
+        line-height: 70px;
+        font-family: "Pacifico";
+        color: rgb(38, 38, 38);
+    }
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        & li {
+            font-size: 16px;
+            font-family: "Raleway";
+            color: rgb(38, 38, 38);
+            font-weight: bold;
+            height: 40px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            &:hover {
+                border-top: 3px solid #ff6033;
+                border-bottom: 3px solid #00000000;
+            }
+            &:active {
+                border-top: 3px solid black;
+            }
+            & a {
+                text-decoration: none;
+                color: rgb(38, 38, 38);
+            }
+        }
+    }
+}
+
+// ------ Header Block
+
 @keyframes header__scroll-bounce {
     0% {
         bottom: 5vh;
