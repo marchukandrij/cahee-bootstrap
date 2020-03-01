@@ -4217,6 +4217,10 @@ html {
   text-align: center;
 }
 
+.article--black {
+  color: #262626;
+}
+
 .article__title {
   font-size: 90px;
   font-weight: bold;
@@ -4227,6 +4231,10 @@ html {
   .article__title {
     font-size: 70px;
   }
+}
+
+.article__title--low {
+  font-size: 60px;
 }
 
 .article__text {
@@ -4246,10 +4254,121 @@ html {
   color: white;
   line-height: 55px;
   text-align: center;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
 }
 
 .button:hover {
   background-color: #e6091a;
+}
+
+.button--orange {
+  background-color: #ff6033;
+}
+
+.button--orange:hover {
+  background-color: #ff3800;
+}
+
+.button:active {
+  background-color: black;
+  color: white;
+}
+
+.h100 {
+  height: 100%;
+}
+
+@-webkit-keyframes header__scroll-bounce {
+  0% {
+    bottom: 5vh;
+  }
+  2% {
+    bottom: 6vh;
+  }
+  4% {
+    bottom: 5vh;
+  }
+  6% {
+    bottom: 6vh;
+  }
+  8% {
+    bottom: 5vh;
+  }
+  10% {
+    bottom: 6vh;
+  }
+  14% {
+    bottom: 3vh;
+  }
+  16% {
+    bottom: 5vh;
+  }
+  100% {
+    bottom: 5vh;
+  }
+}
+
+@keyframes header__scroll-bounce {
+  0% {
+    bottom: 5vh;
+  }
+  2% {
+    bottom: 6vh;
+  }
+  4% {
+    bottom: 5vh;
+  }
+  6% {
+    bottom: 6vh;
+  }
+  8% {
+    bottom: 5vh;
+  }
+  10% {
+    bottom: 6vh;
+  }
+  14% {
+    bottom: 3vh;
+  }
+  16% {
+    bottom: 5vh;
+  }
+  100% {
+    bottom: 5vh;
+  }
+}
+
+.header {
+  background-image: url(images/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #faf9fb;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  height: 100vh;
+  position: relative;
+}
+
+.header__scroll {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-name: header__scroll-bounce;
+          animation-name: header__scroll-bounce;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .about-us {
@@ -4327,6 +4446,10 @@ html {
 
 .blog-card:hover .blog-card__hover-cover {
   opacity: 0.2;
+}
+
+.blog-card:active .blog-card__hover-cover {
+  opacity: 0.4;
 }
 
 .blog-card__hover-cover {

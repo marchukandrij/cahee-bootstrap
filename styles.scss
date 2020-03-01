@@ -14,12 +14,18 @@
     &--center {
         text-align: center;
     }
+    &--black {
+        color: rgb(38, 38, 38);
+    }
     &__title {
         font-size: 90px;
         font-weight: bold;
         margin-bottom: 25px;
         @include media-breakpoint-down(md) {
             font-size: 70px;
+        }
+        &--low {
+            font-size: 60px;
         }
     }
     &__text {
@@ -31,6 +37,7 @@
 }
 
 $button-red: rgb(247, 43, 59);
+$button-orange: #ff6033;
 .button {
     background-color: $button-red;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -40,12 +47,81 @@ $button-red: rgb(247, 43, 59);
     color: white;
     line-height: 55px;
     text-align: center;
+    transition: background-color 0.1s ease-in;
     &:hover {
         background-color: darken($button-red, 10%);
     }
+    &--orange {
+        background-color: $button-orange;
+        &:hover {
+            background-color: darken($button-orange, 10%);
+        }
+    }
+    &:active {
+        background-color: black;
+        color: white;
+    }
+}
+
+.h100 {
+    height: 100%;
 }
 
 // ======================== Page Blocks
+
+@keyframes header__scroll-bounce {
+    0% {
+        bottom: 5vh;
+    }
+    2% {
+        bottom: 6vh;
+    }
+    4% {
+        bottom: 5vh;
+    }
+    6% {
+        bottom: 6vh;
+    }
+    8% {
+        bottom: 5vh;
+    }
+    10% {
+        bottom: 6vh;
+    }
+    14% {
+        bottom: 3vh;
+    }
+    16% {
+        bottom: 5vh;
+    }
+
+    100% {
+        bottom: 5vh;
+    }
+}
+
+.header {
+    background-image: url(images/header_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #faf9fb;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    height: 100vh;
+    position: relative;
+    &__scroll {
+        position: absolute;
+        bottom: 5vh;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        animation-name: header__scroll-bounce;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+}
 
 // ------ About us Block
 
@@ -115,6 +191,9 @@ $button-red: rgb(247, 43, 59);
     }
     &:hover &__hover-cover {
         opacity: 0.2;
+    }
+    &:active &__hover-cover {
+        opacity: 0.4;
     }
     &__hover-cover {
         position: absolute;
