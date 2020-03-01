@@ -4208,6 +4208,66 @@ html {
   padding: 0;
 }
 
+.article {
+  font-family: "Raleway";
+  color: white;
+}
+
+.article--center {
+  text-align: center;
+}
+
+.article__title {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991.98px) {
+  .article__title {
+    font-size: 70px;
+  }
+}
+
+.article__text {
+  font-size: 17px;
+  line-height: 1.471;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #f72b3b;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  height: 55px;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: white;
+  line-height: 55px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #e6091a;
+}
+
+.about-us {
+  background-color: #00b1b1;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.about-us__image {
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .about-us .article {
+    text-align: center;
+  }
+}
+
 .blog {
   background-color: #b07cf7;
   padding-top: 80px;
@@ -4226,35 +4286,6 @@ html {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
-
-.article {
-  text-align: center;
-  font-family: "Raleway";
-  color: white;
-}
-
-.article__title {
-  font-size: 90px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-.article__subtitle {
-  font-size: 17px;
-  line-height: 1.471;
-  font-weight: 300;
-}
-
-.group {
-  width: 1170px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 .blog-card {
@@ -4381,21 +4412,5 @@ html {
   position: absolute;
   left: 20px;
   bottom: 22px;
-}
-
-.button {
-  background-color: #f72b3b;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-  height: 55px;
-  font-size: 20px;
-  font-family: "Raleway";
-  color: white;
-  line-height: 55px;
-  text-align: center;
-}
-
-.button:hover {
-  background-color: #e6091a;
 }
 /*# sourceMappingURL=styles.css.map */
