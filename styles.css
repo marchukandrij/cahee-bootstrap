@@ -4240,7 +4240,6 @@ html {
 .article__title--lower {
   font-size: 40px;
   font-weight: bold;
-  line-height: 0.675;
 }
 
 .article__text {
@@ -4781,5 +4780,63 @@ html {
   position: absolute;
   left: 20px;
   bottom: 22px;
+}
+
+.footer {
+  background-color: #262626;
+  height: 90px;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    height: 120px;
+  }
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__copyright {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: #b9b9b9;
+  line-height: 1.563;
+}
+
+.footer__logo {
+  font-size: 25px;
+  font-family: "Pacifico";
+  color: #b9b9b9;
+  line-height: 1;
+}
+
+.footer__made {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: #b9b9b9;
+}
+
+.footer__made--love {
+  color: #ff2b58;
 }
 /*# sourceMappingURL=styles.css.map */

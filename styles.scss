@@ -30,7 +30,6 @@
         &--lower {
             font-size: 40px;
             font-weight: bold;
-            line-height: 0.675;
         }
     }
     &__text {
@@ -430,5 +429,42 @@ $button-green: #96b92c;
         position: absolute;
         left: 20px;
         bottom: 22px;
+    }
+}
+
+.footer {
+    background-color: #262626;
+    height: 90px;
+    @include media-breakpoint-down(sm) {
+        height: 120px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    &__copyright {
+        font-size: 16px;
+        font-family: "Raleway";
+        color: rgb(185, 185, 185);
+        line-height: 1.563;
+    }
+    &__logo {
+        font-size: 25px;
+        font-family: "Pacifico";
+        color: rgb(185, 185, 185);
+        line-height: 1;
+    }
+    &__made {
+        font-size: 15px;
+        font-family: "Raleway";
+        color: rgb(185, 185, 185);
+        &--love {
+            color: #ff2b58;
+        }
     }
 }
