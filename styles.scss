@@ -298,7 +298,7 @@ $button-green: #96b92c;
         background-color: rgba(255, 255, 255, 0.5);
         height: 55px;
         width: 100%;
-        padding-left: 15px;
+        padding-left: 20px;
         padding-right: 15px;
         font-size: 17px;
         &::placeholder {
@@ -306,6 +306,11 @@ $button-green: #96b92c;
             font-family: "Raleway";
             color: rgba(38, 38, 38, 0.502);
             line-height: 55px;
+        }
+        &:focus {
+            border-left: 5px solid rgb(38, 38, 38);
+            padding-left: 16px;
+            background-color: rgba(0, 0, 0, 0.1);
         }
     }
 }
@@ -496,6 +501,7 @@ $button-green: #96b92c;
         padding-left: 20px;
         resize: none;
         font-size: 15px;
+        line-height: 1.6;
         font-family: "Raleway";
         color: rgb(255, 255, 255);
         font-weight: bold;
