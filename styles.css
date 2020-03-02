@@ -4208,6 +4208,10 @@ html {
   padding: 0;
 }
 
+html {
+  background-color: black;
+}
+
 .article {
   font-family: "Raleway";
   color: white;
