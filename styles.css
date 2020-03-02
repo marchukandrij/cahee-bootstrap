@@ -4208,7 +4208,8 @@ html {
   padding: 0;
 }
 
-html {
+html,
+body {
   background-color: black;
 }
 
