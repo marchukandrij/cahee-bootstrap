@@ -4237,6 +4237,12 @@ html {
   font-size: 60px;
 }
 
+.article__title--lower {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0.675;
+}
+
 .article__text {
   font-size: 17px;
   line-height: 1.471;
@@ -4276,6 +4282,14 @@ html {
 
 .button--blue:hover {
   background-color: #436a81;
+}
+
+.button--green {
+  background-color: #96b92c;
+}
+
+.button--green:hover {
+  background-color: #759022;
 }
 
 .button:active {
@@ -4566,6 +4580,57 @@ html {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
   position: relative;
+}
+
+.subscribe {
+  background-image: url(images/subscribe-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  height: 500px;
+  position: relative;
+}
+
+.subscribe__input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #262626;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 55px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgba(38, 38, 38, 0.502);
+  line-height: 55px;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgba(38, 38, 38, 0.502);
+  line-height: 55px;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgba(38, 38, 38, 0.502);
+  line-height: 55px;
+}
+
+.subscribe__input::placeholder {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgba(38, 38, 38, 0.502);
+  line-height: 55px;
 }
 
 .blog {
